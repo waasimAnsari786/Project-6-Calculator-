@@ -20,7 +20,7 @@ btns.forEach(btn => {
     }
 
     else if (btn.id === `equal`) {
-        btn.addEventListener("clickk" , () => {
+        btn.addEventListener("click" , () => {
             let equalsToBtn = eval(result.value);
             result.value = equalsToBtn;
         });
