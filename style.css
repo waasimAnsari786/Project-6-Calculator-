@@ -39,11 +39,78 @@ html {
 
 
 
-/* my Digital Clock start */
+/* my calculator start */
+
+body{
+    background: url(https://hips.hearstapps.com/hmg-prod/images/ama-dablam-mountain-peak-view-from-chola-pass-royalty-free-image-1623254695.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calc{
+    background-color: rgba(65, 64, 64, 0.4);
+    border: .2rem solid black;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 20rem;
+    box-shadow: 0 0 .5rem .5rem rgba(14, 13, 13, 0.2);
+}
+
+.calc-2{
+    padding: 2.5rem 1.6rem;
+}
+
+.container{
+    padding:10rem 0;
+}
+
+html input{
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    box-shadow:  0 0 .4rem .2rem  rgba(255, 255, 255, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+html button{
+    background-color: rgba(17, 17, 17, 0.7);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.7rem;
+    height: 4.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 .5rem .2rem rgba(255, 255, 255, 0.356);
+    width: 4.5rem;
+    font-weight: bold;
+
+}
+
+.btn-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+/* .new-color{
+    color: #DC700E;
+} */
+
+/* #equal{
+    background-color: #DC700E;
+    color: white;
+    box-shadow: 0 0 .5rem .2rem rgb(220, 112, 14 , 0.4);
+} */
 
 
-
-/* my Digital  end */
+/* my calculator end */
 
 
 
