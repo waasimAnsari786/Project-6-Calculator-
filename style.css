@@ -34,6 +34,12 @@ html {
 
 }
 
+@media (max-width:450px) {
+    .calc {
+        width: 30rem !important;
+    }
+}
+
 /* my font size's media query end */
 
 
@@ -108,17 +114,6 @@ html button:hover{
     align-items: center;
     margin-top: 1.5rem;
 }
-
-/* .new-color{
-    color: #DC700E;
-} */
-
-/* #equal{
-    background-color: #DC700E;
-    color: white;
-    box-shadow: 0 0 .5rem .2rem rgb(220, 112, 14 , 0.4);
-} */
-
 
 /* my calculator end */
 
