@@ -1,6 +1,12 @@
 let result = document.querySelector("#result");
 let btns = document.querySelectorAll(".calc-btn");
 
+const equalBtnDisabled = () => {
+    if (result.value = isNaN) {
+        result.value = 0;
+    }
+};
+
 btns.forEach(btn => {
     btn.addEventListener("click" , () => {
         result.value += btn.value;
@@ -25,4 +31,12 @@ btns.forEach(btn => {
             result.value = equalsToBtn;
         });
     }
+});
+
+result.addEventListener("input" , () => {
+    equalBtnDisabled()
+});
+
+window.addEventListener("load" , () => {
+    equalBtnDisabled();
 });
