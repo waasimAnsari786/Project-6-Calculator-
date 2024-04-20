@@ -89,7 +89,13 @@ html button{
     box-shadow: 0 0 .5rem .2rem rgba(255, 255, 255, 0.356);
     width: 4.5rem;
     font-weight: bold;
+    transition: 0.5s;
+}
 
+html button:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 .5rem .5rem rgba(2, 2, 2, 0.356);
 }
 
 .btn-sec{
