@@ -78,6 +78,10 @@ html input{
     margin-bottom: 1.5rem;
 }
 
+html input::placeholder{
+    color: white;
+}
+
 html button{
     background-color: rgba(17, 17, 17, 0.7);
     border: none;
