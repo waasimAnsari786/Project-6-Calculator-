@@ -2,22 +2,21 @@ let result = document.querySelector("#result");
 let btns = document.querySelectorAll(".calc-btn");
 
 const equalBtnDisabled = () => {
-    if (result.value = isNaN) {
-        result.value = 0;
-    }
+    result.disabled = true;
 };
 
 btns.forEach(btn => {
     btn.addEventListener("click", () => {
+        result.disabled = false;
         result.value += btn.value;
     });
-
+    
     if (btn.id === `ac`) {
         btn.addEventListener("click" , () => {
             result.value = "";
         });
     }
-
+    
     else if (btn.id === `del`) {
         btn.addEventListener("click" , () => {
             let currenttext = result.value;
@@ -44,5 +43,5 @@ btns.forEach(btn => {
     }
 });
 
-result.addEventListener("input" , equalBtnDisabled);
 window.addEventListener("load" , equalBtnDisabled);
+result.addEventListener("keydown" , equalBtnDisabled);
