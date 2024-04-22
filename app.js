@@ -8,7 +8,7 @@ const equalBtnDisabled = () => {
 };
 
 btns.forEach(btn => {
-    btn.addEventListener("click" , () => {
+    btn.addEventListener("click", () => {
         result.value += btn.value;
     });
 
@@ -27,16 +27,22 @@ btns.forEach(btn => {
 
     else if (btn.id === `equal`) {
         btn.addEventListener("click" , () => {
-            let equalsToBtn = eval(result.value);
-            result.value = equalsToBtn;
+            let resultVal = result.value;
+            let pattern = /^(\d+(\.\d+)?)%(\d+(\.\d+)?)$/;
+            if (pattern.test(resultVal)) {
+                let splitedVal = resultVal.split("%");
+                let firstVal = splitedVal[0];
+                let secondVal = splitedVal[1];
+                result.value = eval(firstVal * secondVal / 100);
+            }
+
+            else{
+                let equalsToBtn = eval(result.value);
+                result.value = equalsToBtn;
+            }
         });
     }
 });
 
-result.addEventListener("input" , () => {
-    equalBtnDisabled()
-});
-
-window.addEventListener("load" , () => {
-    equalBtnDisabled();
-});
+result.addEventListener("input" , equalBtnDisabled);
+window.addEventListener("load" , equalBtnDisabled);
